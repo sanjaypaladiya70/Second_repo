@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaen Form</title>
+</head>
+<body>
+    <h1>Form to apply for R&AW</h1>
+
+    <form action="post">
+        <label for="applicant name">Your name</label>  <!--lable se ye text aate hai.-->
+        <input type="text" id="name" name="name" placeholder="Enter here">
+        <div>       <!--div(division) ye hame form me next line par lata hai.-->
+            <input type="radio" id="male" name="gender"  value="Male">  
+            <label for="male">Male</label>    
+            <input type="radio" id="female" name="gender" value="Female">    
+            <label for="female">Female</label>
+            <!--kyuki dono radio input me name="gender" dala hai isliye ek hi option select hoga" -->
+             <input type="radio" id="trans">    <!--name="gender" nahi hai isiliye ye select karke saath hi male ya female bhi select kar sakte hai-->
+             <label for="trans">Transgender</label>    <!--kyuki for me id ko link nahi kiya isliye Transgender word pe click karne par radio select nahi ho raha-->
+        </div>
+
+        <div>
+            <input type="checkbox" name="foreign" id="foreign" value="yes">
+            <label for="foreign">Willing to operate on foreign lands</label>
+        </div>
+
+        <div>
+            <label for="reason">Reason you want to join us</label>
+            <br>
+            <textarea name="reason" id="reason" cols="30" rows="8"></textarea>
+        </div>
+
+    </form>
+</body>
+</html>
